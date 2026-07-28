@@ -6,7 +6,7 @@
 <title>LazyJellyRin — Библиотека игр</title>
 <meta name="description" content="Коллекция игр LazyJellyRin — ленивой желейки, которая тыкает в игры. Фильтры по статусу, жанру, поиск, прогресс.">
 <meta name="theme-color" content="#0B0E26">
-<link rel="icon" type="image/png" href="https://static-cdn.jtvnw.net/jtv_user_pictures/afdb9554-03db-4289-81be-ae5bb0d3e7bc-profile_image-600x600.jpeg">
+<link rel="icon" type="image/png" href="./assets/avatar-rin.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Nunito:wght@800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -69,13 +69,13 @@ img{display:block;max-width:100%}
 
 /* Hero */
 .hero-container{max-width:1440px;margin:0 auto;padding:20px 24px 0}
-.hero-card{position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--border);background:linear-gradient(135deg,var(--card),var(--bg2));min-height:220px;display:grid;place-items:center}
-.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.22;filter:blur(2px)}
-.hero-overlay{position:relative;z-index:1;padding:28px 32px;width:100%;display:flex;flex-direction:column;gap:12px}
+.hero-card{position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--border);background:linear-gradient(135deg,var(--card),var(--bg2));min-height:280px;display:grid;place-items:center}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.88;filter:none}
+.hero-overlay{position:relative;z-index:1;padding:24px 28px;width:100%;display:flex;flex-direction:column;gap:10px;background:linear-gradient(180deg,rgba(8,11,30,.1) 0%,rgba(8,11,30,.15) 35%,rgba(8,11,30,.75) 75%,rgba(8,11,30,.92) 100%)}
 .hero-title{font-family:'Nunito',sans-serif;font-size:clamp(26px,4vw,40px);font-weight:900;letter-spacing:-.03em;line-height:1.05;background:linear-gradient(135deg,var(--text),var(--accent) 60%,var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-subtitle{color:var(--muted);font-size:15px;max-width:640px}
 .hero-badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
-.badge-stat{display:inline-flex;gap:6px;align-items:center;padding:6px 12px;border-radius:999px;background:var(--card);border:1px solid var(--border);font-size:12px;font-weight:700}
+.badge-stat{display:inline-flex;gap:6px;align-items:center;padding:6px 12px;border-radius:999px;background:rgba(20,26,58,.85);border:1px solid var(--border);font-size:12px;font-weight:700;backdrop-filter:blur(6px)}
 .badge-stat strong{color:var(--accent);font-family:'JetBrains Mono',monospace}
 
 /* Layout */
@@ -257,7 +257,7 @@ footer.site-footer{max-width:1440px;margin:0 auto;padding:0 24px 32px;text-align
 
 <div class="hero-container">
   <div class="hero-card">
-    <img class="hero-img" src="./assets/hero-jelly.png" alt="" onerror="this.style.display='none'">
+    <img class="hero-img" src="./assets/hero-rin.png" alt="" onerror="this.style.display='none'">
     <div class="hero-overlay">
       <h1 class="hero-title">Ленивая желейка и её библиотека игр</h1>
       <p class="hero-subtitle">~~ ленивая желейка тыкает в игры ~~ — каталог стримов, прохождений, любимок и заброшек. 244 игры из гугл-таблицы, собраны с любовью.</p>
@@ -276,7 +276,7 @@ footer.site-footer{max-width:1440px;margin:0 auto;padding:0 24px 32px;text-align
   <aside class="sidebar">
     <div class="profile-card">
       <div class="profile-avatar-wrap">
-        <img class="profile-avatar" id="profileAvatar" src="https://static-cdn.jtvnw.net/jtv_user_pictures/afdb9554-03db-4289-81be-ae5bb0d3e7bc-profile_image-600x600.jpeg" alt="LazyJellyRin" onerror="this.src='https://cdn.simpleicons.org/twitch/B07CFF'">
+        <img class="profile-avatar" id="profileAvatar" src="./assets/avatar-rin.png" alt="LazyJellyRin" onerror="this.src='https://cdn.simpleicons.org/twitch/B07CFF'">
         <div id="streamIndicator" class="status-indicator offline" title="Статус стрима"></div>
       </div>
       <div class="profile-name">LazyJellyRin</div>
